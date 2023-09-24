@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Weather App";
+}
+
+<h1>Search Weather Data</h1>
+<form asp-controller="Home" asp-action="WeatherData" method="get">
+    <input type="text" name="query" placeholder="Zip code or city name" required />
+    <button type="submit">Search</button>
+</form>
